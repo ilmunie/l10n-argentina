@@ -1,0 +1,197 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* base_fiscal_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-01 16:54+0000\n"
+"PO-Revision-Date: 2019-04-01 13:59-0300\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
+"Last-Translator: \n"
+"Language: es_AR\n"
+
+#. module: base_fiscal_report
+#: model:ir.ui.view,arch_db:base_fiscal_report.view_account_fiscal_report_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_report_config_id
+msgid "Config"
+msgstr "Configuración\t"
+
+#. module: base_fiscal_report
+#: model:ir.ui.menu,name:base_fiscal_report.fiscal_report_config_menu
+msgid "Config of Exporters"
+msgstr "Configuración de Exportadores"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_report_config_id
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config_create_uid
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_create_uid
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_create_uid
+msgid "Created by"
+msgstr "Creado Por"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config_create_date
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_create_date
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_create_date
+msgid "Created on"
+msgstr "Creado En"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config_display_name
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_display_name
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: base_fiscal_report
+#: model:ir.ui.menu,name:base_fiscal_report.fiscal_report_files_menu
+msgid "Files"
+msgstr "Archivos"
+
+#. module: base_fiscal_report
+#: model:ir.ui.menu,name:base_fiscal_report.fiscal_report_root_menu
+msgid "Fiscal Exporters"
+msgstr "Exportadores Fiscales"
+
+#. module: base_fiscal_report
+#: model:ir.actions.act_window,name:base_fiscal_report.action_fiscal_report
+#: model:ir.ui.view,arch_db:base_fiscal_report.view_account_fiscal_report_form
+msgid "Fiscal Report"
+msgstr "Exportador Fiscal"
+
+#. module: base_fiscal_report
+#: model:ir.model,name:base_fiscal_report.model_account_fiscal_report_config
+#: model:ir.ui.view,arch_db:base_fiscal_report.view_account_fiscal_report_config_form
+#: model:ir.ui.view,arch_db:base_fiscal_report.view_account_fiscal_report_config_tree
+msgid "Fiscal Report Config"
+msgstr "Configuración de Exportador Fiscal"
+
+#. module: base_fiscal_report
+#: model:ir.ui.view,arch_db:base_fiscal_report.view_account_fiscal_report_files_form
+msgid "Fiscal Report Fiels"
+msgstr "Archivos de Exportador"
+
+#. module: base_fiscal_report
+#: model:ir.model,name:base_fiscal_report.model_account_fiscal_report_files
+msgid "Fiscal Report Files"
+msgstr "Archivos de Exportador"
+
+#. module: base_fiscal_report
+#: model:ir.ui.view,arch_db:base_fiscal_report.view_account_fiscal_report_form
+msgid "Generate"
+msgstr "Generar Reporte"
+
+#. module: base_fiscal_report
+#: model:ir.ui.menu,name:base_fiscal_report.fiscal_report_menu
+msgid "Generate Files"
+msgstr "Generar Archivos"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config_id
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_id
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_id
+msgid "ID"
+msgstr ""
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report___last_update
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config___last_update
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files___last_update
+msgid "Last Modified on"
+msgstr "Ultima Modificación En"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config_write_uid
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_write_uid
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_write_uid
+msgid "Last Updated by"
+msgstr "Ultima Actualización Por"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config_write_date
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_write_date
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_write_date
+msgid "Last Updated on"
+msgstr "Ultima Actualizacion En"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: base_fiscal_report
+#: selection:account.fiscal.report.files,state:0
+msgid "New"
+msgstr "Nuevo"
+
+#. module: base_fiscal_report
+#: model:ir.ui.view,arch_db:base_fiscal_report.view_account_fiscal_report_form
+msgid "Or"
+msgstr "O"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_period_id
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_period_id
+msgid "Period"
+msgstr "Periodo"
+
+#. module: base_fiscal_report
+#: selection:account.fiscal.report.files,state:0
+msgid "Presented"
+msgstr "Presentado"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_name
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: base_fiscal_report
+#: model:ir.actions.act_window,name:base_fiscal_report.action_fiscal_report_config
+msgid "Report Config"
+msgstr "Configuración de Reporte"
+
+#. module: base_fiscal_report
+#: model:ir.actions.act_window,name:base_fiscal_report.action_fiscal_report_files
+#: model:ir.ui.view,arch_db:base_fiscal_report.view_fiscal_report_files_tree
+msgid "Report Files"
+msgstr "Archivos del Reporte"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_config_report_type
+msgid "Report Type"
+msgstr "Tipo de Reporte"
+
+#. module: base_fiscal_report
+#: model:ir.model.fields,field_description:base_fiscal_report.field_account_fiscal_report_files_state
+msgid "State"
+msgstr "Estado"
+
+#. module: base_fiscal_report
+#: selection:account.fiscal.report.files,state:0
+msgid "With Error"
+msgstr "Con Errores"
+
+#. module: base_fiscal_report
+#: model:ir.model,name:base_fiscal_report.model_account_fiscal_report
+msgid "account.fiscal.report"
+msgstr "Reporte Fiscal"
+
+#. module: base_fiscal_report
+#: model:ir.model,name:base_fiscal_report.model_ir_attachment
+msgid "ir.attachment"
+msgstr "ir.attachment"

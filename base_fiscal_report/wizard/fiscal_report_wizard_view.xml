@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Form View for account.fiscal.report-->
+        <record id="view_account_fiscal_report_form" model="ir.ui.view">
+            <field name="name">account.fiscal.report.wizard.form</field>
+            <field name="model">account.fiscal.report</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Fiscal Report">
+                    <group>
+                        <group>
+                            <field name="report_config_id"/>
+                        </group>
+                        <group>
+                            <field name="period_id" attrs="{'required': True}"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string='Generate' name="generate_report" type="object" class="btn-primary"/>
+                        Or
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_fiscal_report" model="ir.actions.act_window">
+            <field name="name">Fiscal Report</field>
+            <field name="res_model">account.fiscal.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+           <field name="target">new</field>
+        </record>
+
+    </data>
+</odoo>
