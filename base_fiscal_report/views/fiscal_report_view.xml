@@ -9,7 +9,8 @@
             <field name="type">form</field>
             <field name="priority" eval="14" />
             <field name="arch" type="xml">
-                <form string="Fiscal Report Config" create="false" delete="false">
+                <form string="Fiscal Report Config"
+                    create="false" delete="false" edit="false">
                     <sheet>
                         <h1 style="width: 100%%">
                             <field name="name" class="oe_inline" style="width: 100%% !important"/>
@@ -45,7 +46,7 @@
             <field name="model">account.fiscal.report.files</field>
             <field name="arch" type="xml">
                 <form string="Fiscal Report Files"
-                    create="false" delete="false">
+                    create="false" delete="false" edit="false">
                     <header>
                        <field name="state" widget="statusbar" statusbar_visible="new,error,presented"/>
                     </header>
