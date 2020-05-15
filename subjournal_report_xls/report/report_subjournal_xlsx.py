@@ -142,7 +142,7 @@ class SubjournalXlsx(models.AbstractModel):
             )
             WHERE i.type IN %(inv_type)s
                 AND l.date BETWEEN %(date_from)s AND %(date_to)s
-                AND a.internal_type NOT IN ('payable', 'receivable')
+                AND a.internal_type NOT IN ('payable')
         ),
         grouped_invoice AS (
             SELECT invoice_id, ABS(SUM(debit - credit)) AS invoice_total
