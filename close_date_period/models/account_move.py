@@ -30,28 +30,30 @@ class AccountMove(models.Model):
     def write(self, vals):
         if self._context.get('bypass_close_date_period_check'):
             return super(AccountMoveLine, self).write(vals)
-        if self.journal_id.id in self.period_id.journal_ids.ids:
-            raise ValidationError(
-                _("Can't edit an account move on a closed period."))
-        period_model = self.env['date.period']
-        date = vals.get('date', self.date)
-        if not date:
-            return super(AccountMove, self).write(vals)
-        period_date = datetime.strptime(date, '%Y-%m-%d')
-        period = period_model._get_period(period_date)
-        journal_id = vals.get('journal_id', self.journal_id.id)
-        if isinstance(journal_id, models.BaseModel):
-            journal_id = journal_id.id
-        if journal_id in period.journal_ids.ids:
-            raise ValidationError(
-                _("Can't edit an account move to a closed period."))
+        for move in self:
+            if move.journal_id.id in move.period_id.journal_ids.ids:
+                raise ValidationError(
+                    _("Can't edit an account move on a closed period."))
+            period_model = self.env['date.period']
+            date = vals.get('date', move.date)
+            if not date:
+                continue
+            period_date = datetime.strptime(date, '%Y-%m-%d')
+            period = period_model._get_period(period_date)
+            journal_id = vals.get('journal_id', move.journal_id.id)
+            if isinstance(journal_id, models.BaseModel):
+                journal_id = journal_id.id
+            if journal_id in period.journal_ids.ids:
+                raise ValidationError(
+                    _("Can't edit an account move to a closed period."))
         return super(AccountMove, self).write(vals)
 
     @api.multi
     def unlink(self):
-        if self.journal_id.id in self.period_id.journal_ids.ids:
-            raise ValidationError(
-                _("Can't delete an account move on a closed period."))
+        for move in self:
+            if move.journal_id.id in move.period_id.journal_ids.ids:
+                raise ValidationError(
+                    _("Can't delete an account move on a closed period."))
         return super(AccountMove, self).unlink()
 
 
